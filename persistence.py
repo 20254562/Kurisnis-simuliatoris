@@ -7,13 +7,11 @@ from domain import Defender, Weapon
 class WeaponRepository:
     def __init__(self):
         self.script_dir = os.path.dirname(os.path.abspath(__file__))
-        self.profiles_dir = os.path.join(self.script_dir, "Profiles", "Weapons")
-        os.makedirs(self.profiles_dir, exist_ok=True)
 
     def _resolve_path(self, filename):
         if os.path.isabs(filename):
             return filename
-        return os.path.join(self.profiles_dir, filename)
+        return os.path.join(self.script_dir, filename)
 
     def save_weapon(self, weapon, filename):
         filepath = self._resolve_path(filename)
@@ -74,13 +72,11 @@ class WeaponRepository:
 class DefenderRepository:
     def __init__(self):
         self.script_dir = os.path.dirname(os.path.abspath(__file__))
-        self.profiles_dir = os.path.join(self.script_dir, "Profiles", "Defenders")
-        os.makedirs(self.profiles_dir, exist_ok=True)
 
     def _resolve_path(self, filename):
         if os.path.isabs(filename):
             return filename
-        return os.path.join(self.profiles_dir, filename)
+        return os.path.join(self.script_dir, filename)
 
     def save_defender(self, defender, filename):
         filepath = self._resolve_path(filename)

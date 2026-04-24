@@ -638,10 +638,16 @@ class SimulatorApp:
         if weapon is None:
             return
 
-        # Auto-save to Profiles/Weapons folder with weapon name
-        filename = f"{weapon.name}.txt"
+        filename = filedialog.asksaveasfilename(
+            title="Save Weapon",
+            initialdir=self.script_dir,
+            defaultextension=".txt",
+            filetypes=[("Text files", "*.txt"), ("All files", "*.*")],
+        )
+        if not filename:
+            return
+
         self.weapon_repo.save_weapon(weapon, filename)
-        messagebox.showinfo("Saved", f"Weapon profile '{weapon.name}' saved to Profiles/Weapons/")
 
     def save_selected_defender(self):
         defender = self._parse_defender_entries(
@@ -651,17 +657,21 @@ class SimulatorApp:
         if defender is None:
             return
 
-        # Auto-save to Profiles/Defenders folder with defender name
-        filename = f"{defender.name}.txt"
+        filename = filedialog.asksaveasfilename(
+            title="Save Defender",
+            initialdir=self.script_dir,
+            defaultextension=".txt",
+            filetypes=[("Text files", "*.txt"), ("All files", "*.*")],
+        )
+        if not filename:
+            return
+
         self.defender_repo.save_defender(defender, filename)
-        messagebox.showinfo("Saved", f"Defender profile '{defender.name}' saved to Profiles/Defenders/")
 
     def load_weapon_file(self):
-        weapons_dir = os.path.join(self.script_dir, "Profiles", "Weapons")
-        os.makedirs(weapons_dir, exist_ok=True)
         filename = filedialog.askopenfilename(
             title="Load Weapon",
-            initialdir=weapons_dir,
+            initialdir=self.script_dir,
             filetypes=[("Text files", "*.txt"), ("All files", "*.*")],
         )
         if not filename:
@@ -679,11 +689,9 @@ class SimulatorApp:
             messagebox.showerror("Load error", f"Invalid profile data: {exc}")
 
     def load_defender_file(self):
-        defenders_dir = os.path.join(self.script_dir, "Profiles", "Defenders")
-        os.makedirs(defenders_dir, exist_ok=True)
         filename = filedialog.askopenfilename(
             title="Load Defender",
-            initialdir=defenders_dir,
+            initialdir=self.script_dir,
             filetypes=[("Text files", "*.txt"), ("All files", "*.*")],
         )
         if not filename:
