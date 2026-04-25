@@ -12,5 +12,5 @@ Worth noting that you can input XD3+Y or XD6+Y in attacks or damage (X and Y nee
 You can save and load weapon/defender profiles.
 Next you can designate the number the weapons in count, then click add/update, also you can save and load weapon/defender profiles. Once added to attackers roster the nunber of weapons can still be edited, however to change it's e.g. weapon skill, you will have to change it at top boxes and click add/update button 
 <img width="470" height="178" alt="Ekrano kopija 2026-04-24 111641" src="https://github.com/user-attachments/assets/fd345587-01e6-4c30-8404-1f772414e101" />
-Defender works simuliary, but you only need to input T-toughnes, W-wounds, Sv-save and Inv-invulnabrility save(if it has one, can be left as a blank) and how many models make up defenders profile. Next just click simulate and see the rezults.
+Defender works simuliary, but you only need to input T-toughnes, W-wounds, Sv-save and Inv-invulnabrility save(if it has one, can be left as a blank) and how many models make up defenders profile. Next just click simulate and see the results.
 
