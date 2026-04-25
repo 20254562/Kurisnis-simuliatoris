@@ -14,3 +14,13 @@ Next you can designate the number the weapons in count, then click add/update, a
 <img width="470" height="178" alt="Ekrano kopija 2026-04-24 111641" src="https://github.com/user-attachments/assets/fd345587-01e6-4c30-8404-1f772414e101" />
 Defender works simuliary, but you only need to input T-toughnes, W-wounds, Sv-save and Inv-invulnabrility save(if it has one, can be left as a blank) and how many models make up defenders profile. Next just click simulate and see the results.
 
+## Body
+This program is breaked into smaller files for easy checking and editing being: 
+1. Domain - for main objects, that being weapon and defender
+2. Rolling - for handling rolling dice for hitting, wounding and saving
+3. Persistence - saving profiles as JSON
+4. factory_wirring - usage of factory method and "wirring" most of program together.
+5. simulation -  simulating the outcome of dice rolls (more of what is the average outcome of the rolls)
+6. test_simulation - isn't when program is runnig, just tests to see if the program is running correclly.
+
+
