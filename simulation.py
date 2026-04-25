@@ -129,7 +129,6 @@ class CombatSimulator:
 
 
 def create_simulator(roller_factory):
-    """Factory function to create a CombatSimulator instance."""
     return CombatSimulator(
         roller_factory.create_hit_roller(),
         roller_factory.create_wound_roller(),
