@@ -192,7 +192,10 @@ class Defender:
 
     @save.setter
     def save(self, value):
-        self._save = self._validate_save(value)
+        value = int(value)
+        if value < 2:
+            raise ValueError("Save must be at least 2.")
+        return self._save = value
 
     @property
     def invulnerable_save(self):
@@ -219,12 +222,6 @@ class Defender:
         value = int(value)
         if value < 2 or value > 6:
             raise ValueError(f"{field_name} must be between 2 and 6.")
-        return value
-
-    def _validate_save(self, value):
-        value = int(value)
-        if value < 2:
-            raise ValueError("Save must be at least 2.")
         return value
 
     def __str__(self):
