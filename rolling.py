@@ -5,7 +5,7 @@ from abc import ABC, abstractmethod
 class RollStrategy(ABC):
     @abstractmethod
     def roll(self, *args, **kwargs):
-        """Execute a roll and return successful outcomes."""
+        pass
 
 
 class HitRoller(RollStrategy):
