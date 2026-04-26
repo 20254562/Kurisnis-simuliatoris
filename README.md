@@ -24,4 +24,8 @@ This program is breaked into smaller files for easy checking and editing being:
 6. test_simulation - isn't used when program is runnig, just tests to see if the program is running correclly.
 
 Main points:
-Polymorphism -  
+
+Polymorphism -  happens in simualtion:<img width="399" height="296" alt="Ekrano kopija 2026-04-26 113103" src="https://github.com/user-attachments/assets/baf49db6-a5f9-451f-a1c4-627cdadbc027" /> the program just calls on the roll fucntion from my rolling.py (happens at wiring) with diffrent behaviors. This nicely transaltes to Abstraction where there is and abstrack class RollStrategy with abstract method roll that all other classes that are child of RollStategy like HitRoller must use it <img width="572" height="410" alt="Ekrano kopija 2026-04-26 113737" src="https://github.com/user-attachments/assets/9c581cce-0444-4bad-968a-9f0e77a3dd9b" /> this is also there Inheritance is used altough I did not used super init. 
+
+
+
