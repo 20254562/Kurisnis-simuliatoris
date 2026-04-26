@@ -23,4 +23,5 @@ This program is breaked into smaller files for easy checking and editing being:
 5. simulation -  simulating the outcome of dice rolls (more of what is the average outcome of the rolls)
 6. test_simulation - isn't used when program is runnig, just tests to see if the program is running correclly.
 
-
+Main points:
+Polymorphism -  
