@@ -27,5 +27,7 @@ Main points:
 
 Polymorphism -  happens in simualtion:<img width="399" height="296" alt="Ekrano kopija 2026-04-26 113103" src="https://github.com/user-attachments/assets/baf49db6-a5f9-451f-a1c4-627cdadbc027" /> the program just calls on the roll fucntion from my rolling.py (happens at wiring) with diffrent behaviors. This nicely transaltes to Abstraction where there is and abstrack class RollStrategy with abstract method roll that all other classes that are child of RollStategy like HitRoller must use it <img width="572" height="410" alt="Ekrano kopija 2026-04-26 113737" src="https://github.com/user-attachments/assets/9c581cce-0444-4bad-968a-9f0e77a3dd9b" /> this is also there Inheritance is used altough I did not used super init. 
 
+Encapsualtion is used in domain to protect and enforce validation on object data <img width="461" height="225" alt="Ekrano kopija 2026-04-26 133320" src="https://github.com/user-attachments/assets/7c1871b6-b5e3-401e-a11b-c995508e33c8" />
 
+Moving on, in this project I used factory method which allows me to use different implementations of rolling logic into the simulator, improving flexibility by creating rolling strategy objects
 
