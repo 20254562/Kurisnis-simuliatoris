@@ -29,5 +29,6 @@ Polymorphism -  happens in simualtion:<img width="399" height="296" alt="Ekrano 
 
 Encapsualtion is used in domain to protect and enforce validation on object data <img width="461" height="225" alt="Ekrano kopija 2026-04-26 133320" src="https://github.com/user-attachments/assets/7c1871b6-b5e3-401e-a11b-c995508e33c8" />
 
-Moving on, in this project I used factory method which allows me to use different implementations of rolling logic into the simulator, improving flexibility by creating rolling strategy objects
+Moving on, in this project I used factory method which allows me to use different implementations of rolling logic into the simulator, improving flexibility: <img width="423" height="595" alt="Ekrano kopija 2026-04-26 141906" src="https://github.com/user-attachments/assets/5ab64479-75ce-45d6-ba28-b7715664667a" />
+
 
