@@ -31,4 +31,10 @@ Encapsualtion is used in domain to protect and enforce validation on object data
 
 Moving on, in this project I used factory method which allows me to use different implementations of rolling logic into the simulator, improving flexibility: <img width="423" height="595" alt="Ekrano kopija 2026-04-26 141906" src="https://github.com/user-attachments/assets/5ab64479-75ce-45d6-ba28-b7715664667a" />
 
+Now composition and agregation is used in simulation.py, by CombatSimulator, where difrent rollers are created (composition) and weapon, defender profiles are passed into (agregation) <img width="529" height="126" alt="Ekrano kopija 2026-04-29 092345" src="https://github.com/user-attachments/assets/4e19ba04-1ad7-40ba-b990-4f58563d21cd" /> <img width="216" height="97" alt="Ekrano kopija 2026-04-29 093309" src="https://github.com/user-attachments/assets/63d5ff9f-c3b5-47b2-9334-d13954e56135" />
 
+
+Now as for requirements this program comes with tests is test_simulation.py intented to test defrent parts of program to make sure it can work correctly (edit note: the test that checks if program detects when wrong save is entered is broken simply by my idiocy, models can have 7+ saves - ork grechin, but when I wrote code about saves I forgot about it, remembered, fixed it and forgot to change the test before uploading it) for example this test using preset RNG(random number generator) outcomes checks if program calculates the outcome correctly <img width="557" height="344" alt="Ekrano kopija 2026-04-29 095348" src="https://github.com/user-attachments/assets/0f8f34c3-a1f6-4829-9b95-f50af45c2a73" />
+
+
+Saving is handeled in persistence where weapon and defenders profiles are saved 
