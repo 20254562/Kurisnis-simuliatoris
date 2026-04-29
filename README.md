@@ -37,4 +37,18 @@ Now composition and agregation is used in simulation.py, by CombatSimulator, whe
 Now as for requirements this program comes with tests is test_simulation.py intented to test defrent parts of program to make sure it can work correctly (edit note: the test that checks if program detects when wrong save is entered is broken simply by my idiocy, models can have 7+ saves - ork grechin, but when I wrote code about saves I forgot about it, remembered, fixed it and forgot to change the test before uploading it) for example this test using preset RNG(random number generator) outcomes checks if program calculates the outcome correctly <img width="557" height="344" alt="Ekrano kopija 2026-04-29 095348" src="https://github.com/user-attachments/assets/0f8f34c3-a1f6-4829-9b95-f50af45c2a73" />
 
 
-Saving is handeled in persistence where weapon and defenders profiles are saved 
+Saving is handeled in persistence.py where weapon and defenders profiles are first broken down into JSON format and then saved into .txt files for general readability. Loading already saved profiles is also handeled in there(edit note: there exist save/load_weapons/defenders, these are leftovers when I was planing that user could save/load multiple profiles at once howerver that never happened and I forgot until I was geting pictures and saw them):<img width="598" height="714" alt="Ekrano kopija 2026-04-29 153109" src="https://github.com/user-attachments/assets/457648ca-8a60-41cb-98f2-7ef98b6fbda2" />
+
+## Results
+- The program succesfully calculates the AVERAGE outcome of the entire attack/defend dice sequence
+- Is able to read and calculate the number of attacks or damage if you need to roll for it (never again)
+- Although the amount of features that simulation has compared to the tabletop game is small it is a nice simulator if you want to see how interaction can work out or don't
+- The code follows PEP8 style guidelines
+
+## Concliution
+I was able to to fulfill the requirements, including usage of OPP pillars in this program. It performs as (mostly) intented and the rezult it a simulation for Warhammer 40K dice rolling sequence. The process of making it allowed me to better understand and practically apply the Python concepts learned during this semester.
+
+## Potential future implementations
+- Implement multiple profile loading from the same file and multiple profiles for defenders
+- Add critical hits, wounds and global modifiers (sustained hits X, +/-1 hit/wound, benefit of cover, -1 damage)
+- Add separation for shooting and close combat weapons and that the user can choose if to see what is the chance in shooting, close combat, or combine both.
